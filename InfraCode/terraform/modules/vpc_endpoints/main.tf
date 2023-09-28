@@ -44,7 +44,7 @@ resource "aws_security_group" "endpoint_sg" {
     from_port       = 0
     to_port         = 65535
     protocol        = "tcp"
-    security_groups = [var.ecs_task_security_group_id]
+    security_groups = [var.ecs_sg_id]
   }
 
   egress {

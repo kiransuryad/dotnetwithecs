@@ -33,3 +33,8 @@ variable "alb_sg_name" {
   description = "Name for the ALB security group"
   type        = string
 }
+
+variable "private_route_table_ids" {
+  description = "List of private subnet route table IDs to associate with the VPC Endpoint"
+  type        = list(string)
+}
