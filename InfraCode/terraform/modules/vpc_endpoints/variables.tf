@@ -23,3 +23,13 @@ variable "endpoint_security_group_id" {
   description = "Security group ID for the VPC Endpoints"
   type        = string
 }
+
+variable "ecs_sg_name" {
+  description = "Name for the ECS security group"
+  type        = string
+}
+
+variable "alb_sg_name" {
+  description = "Name for the ALB security group"
+  type        = string
+}
